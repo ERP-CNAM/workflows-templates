@@ -18,9 +18,15 @@ Ce workflow gère :
 - L'extraction des métadonnées
 - La construction et la publication de l'image Docker
 
-### Exemple d'appel
+### Exemple d'appel depuis le dépôt back
 
 ```yaml
+name: Image builder
+
+on:
+  push:
+    branches: ["main", "master"]
+
 jobs:
   docker-build:
     uses: ERP-CNAM/workflows-templates/.github/workflows/image-builder.yml@main
