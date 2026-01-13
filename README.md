@@ -30,9 +30,6 @@ on:
 jobs:
   docker-build:
     uses: ERP-CNAM/workflows-templates/.github/workflows/image-builder.yml@main
-    with:
-      image-name: erp-cnam-back
-      context: .
 ```
 
 Pour plus de détails sur les paramètres (`inputs`), ouvrez le fichier du template.
